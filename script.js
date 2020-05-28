@@ -10,4 +10,12 @@ function init() {
 
     let controls = new THREE.OrbitControls(camera);
     controls.addEventListener('change' ,renderer)
+
+    let materialArray = [];
+    let texture_ft = new THREE.TextureLoader().load('negx.jpg');
+    let texture_ft = new THREE.TextureLoader().load('posx.jpg');
+    let texture_ft = new THREE.TextureLoader().load('negy.jpg');
+    let texture_ft = new THREE.TextureLoader().load('posy.jpg');
+    let texture_ft = new THREE.TextureLoader().load('negx.jpg');
+    let texture_ft = new THREE.TextureLoader().load('posx.jpg');
 }
