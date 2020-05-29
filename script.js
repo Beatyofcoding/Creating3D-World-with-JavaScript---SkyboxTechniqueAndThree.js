@@ -12,12 +12,12 @@ function init() {
     controls.addEventListener('change' ,renderer)
 
     let materialArray = [];
-    let texture_ft = new THREE.TextureLoader().load('negx.jpg');
-    let texture_ft = new THREE.TextureLoader().load('posx.jpg');
-    let texture_ft = new THREE.TextureLoader().load('negy.jpg');
-    let texture_ft = new THREE.TextureLoader().load('posy.jpg');
-    let texture_ft = new THREE.TextureLoader().load('negx.jpg');
-    let texture_ft = new THREE.TextureLoader().load('posx.jpg');
+    let texture_negx = new THREE.TextureLoader().load('negx.jpg');
+    let texture_posx = new THREE.TextureLoader().load('posx.jpg');
+    let texture_negy = new THREE.TextureLoader().load('negy.jpg');
+    let texture_posy = new THREE.TextureLoader().load('posy.jpg');
+    let texture_negx = new THREE.TextureLoader().load('negx.jpg');
+    let texture_posx = new THREE.TextureLoader().load('posx.jpg');
 
     materialArray.push(new THREE.MeshBasicMaterial({map:texture_ft}));
     materialArray.push(new THREE.MeshBasicMaterial({map:texture_ft}));
@@ -25,4 +25,6 @@ function init() {
     materialArray.push(new THREE.MeshBasicMaterial({map:texture_ft}));
     materialArray.push(new THREE.MeshBasicMaterial({map:texture_ft}));
     materialArray.push(new THREE.MeshBasicMaterial({map:texture_ft}));
+
+    let skyboxGeo = new THREE.BoxGeometry(10000,10000,10000);
 }
