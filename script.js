@@ -18,4 +18,11 @@ function init() {
     let texture_ft = new THREE.TextureLoader().load('posy.jpg');
     let texture_ft = new THREE.TextureLoader().load('negx.jpg');
     let texture_ft = new THREE.TextureLoader().load('posx.jpg');
+
+    materialArray.push(new THREE.MeshBasicMaterial({map:texture_ft}));
+    materialArray.push(new THREE.MeshBasicMaterial({map:texture_ft}));
+    materialArray.push(new THREE.MeshBasicMaterial({map:texture_ft}));
+    materialArray.push(new THREE.MeshBasicMaterial({map:texture_ft}));
+    materialArray.push(new THREE.MeshBasicMaterial({map:texture_ft}));
+    materialArray.push(new THREE.MeshBasicMaterial({map:texture_ft}));
 }
